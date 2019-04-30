@@ -2,6 +2,14 @@
   <library name="core">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/Library/core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/japplemenubar" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing/awt" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing/core" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing/data" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing/event" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing/javafx" />
+      <root url="jar://$PROJECT_DIR$/Library/core.jar!/processing/opengl" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
