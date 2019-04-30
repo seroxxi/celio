@@ -28,7 +28,7 @@ public class Main extends PApplet{
     }
 
     public void draw(){
-        ellipse(width/2,height/2,second(),second());
+       
     }
 
     //- Recursive Pattern
