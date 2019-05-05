@@ -8,7 +8,6 @@ public class Square extends Figure {
     public Square()
     {
         super();
-        randomColor();
         sx = 0;
         sy = 0;
         ex = 0;
@@ -18,7 +17,6 @@ public class Square extends Figure {
     public Square(int stx, int sty, int enx, int eny)
     {
         super();
-        randomColor();
         sx = stx;
         sy = sty;
         ex = enx;

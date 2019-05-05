@@ -111,7 +111,7 @@ public class Main extends PApplet{
 
     public void initFigure(int figureCount, int readyFigure)
     {
-        for(int i = 0; i <= figureCount; i++)
+        for(int i = 0; i < figureCount; i++)
         {
             switch(readyFigure) {
                 case 1:
