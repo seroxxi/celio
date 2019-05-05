@@ -10,6 +10,11 @@ public abstract class  Figure extends PApplet {
     }
 
     public abstract void paint();
+//    public void paint()
+//    {
+//        fill(color1,color2,color3);
+//        rect(100, 100, 20,20);
+//    }
 
     public void setColor(int c1, int c2, int c3)
     {

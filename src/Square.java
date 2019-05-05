@@ -8,10 +8,10 @@ public class Square extends Figure {
     public Square()
     {
         super();
-        sx = 0;
-        sy = 0;
-        ex = 0;
-        ey = 0;
+        sx = 100;
+        sy = 100;
+        ex = 10;
+        ey = 10;
     }
 
     public Square(int stx, int sty, int enx, int eny)
@@ -25,12 +25,13 @@ public class Square extends Figure {
 
     public void paint()
     {
-        paintSquare(sx,sy,ex,ey);
+        super.fill(color1,color2,color3);
+        super.rect(sx, sy, ex, ey);
     };
 
     public void paintSquare(int startx, int starty, int sizex, int sizey)
     {
-        fill(getColor1(),getColor2(),getColor3());
+        fill(color1,color2,color3);
         rect(startx, starty, sizex, sizey);
     }
 

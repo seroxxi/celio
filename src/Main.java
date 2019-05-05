@@ -93,10 +93,11 @@ public class Main extends PApplet{
         resetWindow();
 
         //- paintFigure
-        for(int i = 0; i < figurePool.size(); i++)
-        {
-            figurePool.get(i).paint();
-        }
+//        for(int i = 0; i < figurePool.size(); i++)
+//        {
+//            figurePool.get(i).paint();
+//            figurePool.get(i).paint();
+//        }
 
         //- Calculate Time differenz -> Countdown from lvlMaxtime
         calcSpendTime();
@@ -115,7 +116,7 @@ public class Main extends PApplet{
         {
             switch(readyFigure) {
                 case 1:
-                    figurePool.add(new Square(10,30,10,10));
+                    figurePool.add(new Square(100,100,10,10));
                     break;
                 default:
                     figurePool.add(new Square());
