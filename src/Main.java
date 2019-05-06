@@ -8,8 +8,8 @@ public class Main extends PApplet{
     public static PApplet prog;
 
     //- Main Board
-    int WinWidth = 800;
-    int WinHeight = 700;
+    int WinWidth = 500;
+    int WinHeight = 400;
 
     //- Logo
     int imgWidth = 150;
@@ -20,7 +20,7 @@ public class Main extends PApplet{
     int lifeHeight = 40;
     int lifePos = 0;
     //- Anzahl Leben
-    int lifeCount = 2;
+    int lifeCount = 3;
 
     //- Definition Level
     //- 1) level
