@@ -8,8 +8,7 @@ public class Circle extends Figure {
     public void paint()
     {
 
-    };
-
+    }
 
 
     public void randomSize()

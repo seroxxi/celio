@@ -24,7 +24,7 @@ public class Square extends Figure {
         println(color1 + ", " + color2 + ", " + color3);
         run.fill(color1,color2,color3);
         run.rect(sx, sy, ex, ey);
-    };
+    }
 
 
 
