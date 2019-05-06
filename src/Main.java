@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class Main extends PApplet{
 
+    public static PApplet prog;
+
     //- Main Board
     int WinWidth = 800;
     int WinHeight = 700;
@@ -70,6 +72,7 @@ public class Main extends PApplet{
     }
 
     public void setup(){
+        prog = this;
         imgLogo = loadImage("CELIO_bLANK.png");
         imgLife = loadImage("heart-icon.png");
 
@@ -95,20 +98,18 @@ public class Main extends PApplet{
         //- paintFigure
         for(int i = 0; i < figurePool.size(); i++)
         {
-            println(figurePool.size());
             figurePool.get(i).paint();
-            println(i);
         }
-
-//        fill(244,244,222);
-//        rect(100,100,30,30);
 
         //- Calculate Time differenz -> Countdown from lvlMaxtime
         calcSpendTime();
 
-        //- calcScore
-        //calcScore(1);
+
+        //- berechne Score
         calcScore(currentLVL);
+
+        //- berechne Time
+        calcTime();
 
         //- Framerate Bildaufbau --> hier 1 für alle sekunden
         frameRate(1);
@@ -120,7 +121,7 @@ public class Main extends PApplet{
         {
             switch(readyFigure) {
                 case 1:
-                    figurePool.add(new Square(100,100,10,10));
+                    figurePool.add(new Square());
                     break;
                 default:
                     figurePool.add(new Square());
@@ -238,10 +239,21 @@ public class Main extends PApplet{
     public void calcScore(int lvl)
     {
         //- Score
+        fill(0,0,0);
         textSize(14);
-        scoreCount = scoreCount + (lvl * countTime);
-        text("Score: " + scoreCount , 10, 32);
+        if(countFigur == countFigur+1)
+        {
+            scoreCount = scoreCount + (countFigur * spendTime);
+        }
+
+        text("Score: " + scoreCount , 10, 23);
         Level[currentLVL -1][3] = scoreCount;
     }
 
+    public void calcTime()
+    {
+        fill(0,0,0);
+        textSize(14);
+        text("Time: " + currentTime , 13, 42);
+    }
 }

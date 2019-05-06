@@ -1,20 +1,16 @@
 public class Square extends Figure {
 
     int diffx, diffy;
-    int sx,sy,ex,ey;
+    float sx,sy,ex,ey;
 
     //int color1,color2,color3;
 
     public Square()
     {
         super();
-        sx = 100;
-        sy = 100;
-        ex = 10;
-        ey = 10;
     }
 
-    public Square(int stx, int sty, int enx, int eny)
+    public Square(float stx, float sty, float enx, float eny)
     {
         super();
         sx = stx;
@@ -26,8 +22,22 @@ public class Square extends Figure {
     public void paint()
     {
         println(color1 + ", " + color2 + ", " + color3);
-        fill(color1,color2,color3);
-        rect(sx, sy, ex, ey);
+        run.fill(color1,color2,color3);
+        run.rect(sx, sy, ex, ey);
     };
+
+
+
+    public void randomSize()
+    {
+        ex = random(10,50);
+        ey = random(10, 50);
+    }
+
+    public void randomPos()
+    {
+        sx = random(1,  run.width - ex);
+        sy = random(top, run.height - bottom - ey);
+    }
 
 }

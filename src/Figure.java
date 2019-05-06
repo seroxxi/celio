@@ -1,26 +1,26 @@
 import processing.core.PApplet;
 
-public abstract class  Figure extends PApplet {
+public abstract class Figure extends PApplet {
 
+    PApplet run = Main.prog;
     int color1,color2,color3;
+
+    int top = 50;
+    int bottom = 50;
+
 
     public Figure()
     {
         randomColor();
+        randomSize();
+        randomPos();
     }
 
-    public void setup()
-    {}
-    public void draw()
-    {}
-
-
     public abstract void paint();
-//    public void paint()
-//    {
-//        fill(color1,color2,color3);
-//        rect(100, 100, 20,20);
-//    }
+
+    public abstract void randomPos();
+
+    public abstract void randomSize();
 
     public void setColor(int c1, int c2, int c3)
     {
