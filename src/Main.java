@@ -93,11 +93,15 @@ public class Main extends PApplet{
         resetWindow();
 
         //- paintFigure
-//        for(int i = 0; i < figurePool.size(); i++)
-//        {
-//            figurePool.get(i).paint();
-//            figurePool.get(i).paint();
-//        }
+        for(int i = 0; i < figurePool.size(); i++)
+        {
+            println(figurePool.size());
+            figurePool.get(i).paint();
+            println(i);
+        }
+
+//        fill(244,244,222);
+//        rect(100,100,30,30);
 
         //- Calculate Time differenz -> Countdown from lvlMaxtime
         calcSpendTime();
@@ -122,6 +126,7 @@ public class Main extends PApplet{
                     figurePool.add(new Square());
             }
         }
+
     }
 
     public void setupLevel(int cLVL, int lCount, long sTime, long sCount, int cFigure)

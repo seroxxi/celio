@@ -25,14 +25,9 @@ public class Square extends Figure {
 
     public void paint()
     {
-        super.fill(color1,color2,color3);
-        super.rect(sx, sy, ex, ey);
-    };
-
-    public void paintSquare(int startx, int starty, int sizex, int sizey)
-    {
+        println(color1 + ", " + color2 + ", " + color3);
         fill(color1,color2,color3);
-        rect(startx, starty, sizex, sizey);
-    }
+        rect(sx, sy, ex, ey);
+    };
 
 }

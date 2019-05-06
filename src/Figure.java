@@ -9,6 +9,12 @@ public abstract class  Figure extends PApplet {
         randomColor();
     }
 
+    public void setup()
+    {}
+    public void draw()
+    {}
+
+
     public abstract void paint();
 //    public void paint()
 //    {
@@ -54,4 +60,5 @@ public abstract class  Figure extends PApplet {
     public void setColor3(int color3) {
         this.color3 = color3;
     }
+
 }
