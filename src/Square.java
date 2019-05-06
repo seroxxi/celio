@@ -1,7 +1,6 @@
 public class Square extends Figure {
 
     int diffx, diffy;
-    float sx,sy,ex,ey;
 
     //int color1,color2,color3;
 

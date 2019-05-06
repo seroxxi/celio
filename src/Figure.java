@@ -4,6 +4,7 @@ public abstract class Figure extends PApplet {
 
     PApplet run = Main.prog;
     int color1,color2,color3;
+    float sx,sy,ex,ey;
 
     int top = 50;
     int bottom = 50;

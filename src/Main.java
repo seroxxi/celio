@@ -44,7 +44,7 @@ public class Main extends PApplet{
     int countFigur = 5;
 
     //- Figure ready
-    int readyFigure = 1;
+    int readyFigure = 2;
 
     //- End Message
     String EndMessage = "";
@@ -117,11 +117,16 @@ public class Main extends PApplet{
 
     public void initFigure(int figureCount, int readyFigure)
     {
+        int ready = readyFigure;
         for(int i = 0; i < figureCount; i++)
         {
+            readyFigure = (int)random(0,ready)+1;
             switch(readyFigure) {
                 case 1:
                     figurePool.add(new Square());
+                    break;
+                case 2:
+                    figurePool.add(new Circle());
                     break;
                 default:
                     figurePool.add(new Square());
