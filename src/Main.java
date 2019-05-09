@@ -8,8 +8,8 @@ public class Main extends PApplet{
     public static PApplet prog;
 
     //- Main Board
-    int WinWidth = 500;
-    int WinHeight = 400;
+    int WinWidth = 800;
+    int WinHeight = 600;
 
     //- Logo
     int imgWidth = 150;
@@ -44,7 +44,7 @@ public class Main extends PApplet{
     int countFigur = 5;
 
     //- Figure ready
-    int readyFigure = 2;
+    int readyFigure = 3;
 
     //- End Message
     String EndMessage = "";
@@ -98,8 +98,12 @@ public class Main extends PApplet{
         //- paintFigure
         for(int i = 0; i < figurePool.size(); i++)
         {
+            // figurePool.get(i).randomColor();
+            // figurePool.get(i).randomPos();
             figurePool.get(i).paint();
         }
+
+
 
         //- Calculate Time differenz -> Countdown from lvlMaxtime
         calcSpendTime();
@@ -127,6 +131,9 @@ public class Main extends PApplet{
                     break;
                 case 2:
                     figurePool.add(new Circle());
+                    break;
+                case 3:
+                    figurePool.add(new Triangle());
                     break;
                 default:
                     figurePool.add(new Square());

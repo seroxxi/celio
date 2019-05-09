@@ -7,6 +7,7 @@ public class Circle extends Figure {
 
     public void paint()
     {
+        run.fill(color1,color2,color3);
         run.circle(sx, sy, ex);
     }
 

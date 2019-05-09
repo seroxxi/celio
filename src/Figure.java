@@ -3,11 +3,12 @@ import processing.core.PApplet;
 public abstract class Figure extends PApplet {
 
     PApplet run = Main.prog;
-    int color1,color2,color3;
-    float sx,sy,ex,ey;
 
-    int top = 50;
-    int bottom = 50;
+    int color1,color2,color3;
+    float sx,sy,ex,ey,ex2,ey2;
+
+    int top = 55;
+    int bottom = 55;
 
 
     public Figure()
