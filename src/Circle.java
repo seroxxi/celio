@@ -11,6 +11,14 @@ public class Circle extends Figure {
         run.circle(sx, sy, ex);
     }
 
+    @Override
+    public void paint(int setx, int sety)
+    {
+        run.fill(color1,color2,color3);
+        run.circle(setx, sety, ex);
+    }
+
+
     public void randomSize()
     {
         ex = random(10,50);
@@ -21,6 +29,11 @@ public class Circle extends Figure {
     {
         sx = random(ex,  run.width - ex);
         sy = random(top+ex, run.height - bottom - ey);
+    }
+
+    public String whatAmI()
+    {
+        return "Circle";
     }
 
 }

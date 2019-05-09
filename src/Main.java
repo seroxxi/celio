@@ -13,7 +13,7 @@ public class Main extends PApplet{
 
     //- Logo
     int imgWidth = 150;
-    int imgHeight = 50;
+    int imgHeight = 55;
 
     //- Life
     int lifeWidth = 40;
@@ -63,6 +63,10 @@ public class Main extends PApplet{
     processing.core.PImage imgLogo;	// Declare a variable of type PImage
     processing.core.PImage imgLife;	// Declare a variable of type PImage
 
+    //- Auswahl der Figur für den vergleich
+    int selFigShow = 0;
+    boolean contVal = false;
+
     public static void main(String[] args) {
         PApplet.main("Main");
     }
@@ -104,7 +108,6 @@ public class Main extends PApplet{
         }
 
 
-
         //- Calculate Time differenz -> Countdown from lvlMaxtime
         calcSpendTime();
 
@@ -124,7 +127,7 @@ public class Main extends PApplet{
         int ready = readyFigure;
         for(int i = 0; i < figureCount; i++)
         {
-            readyFigure = (int)random(0,ready)+1;
+            //readyFigure = (int)random(0,ready)+1;
             switch(readyFigure) {
                 case 1:
                     figurePool.add(new Square());
@@ -139,6 +142,10 @@ public class Main extends PApplet{
                     figurePool.add(new Square());
             }
         }
+
+        //- Auswahl von Vorgesehen Figur
+        selFigShow = (int)random(1, figurePool.size()-1);
+        println(figurePool.get(selFigShow).whatAmI());
 
     }
 
@@ -224,7 +231,17 @@ public class Main extends PApplet{
         fill(255,255,255);
         rect(0,0,WinWidth,WinHeight);
         fill(0,0,0);
+        //- Abtrennung oben
         rect(0, imgHeight,WinWidth,3 );
+        //- Abtrennung unten
+        //rect(0, WinHeight - imgHeight -5,WinWidth,3 );
+        fill(255,255,255);
+        rect(WinWidth-imgWidth, WinHeight - imgHeight,WinWidth,imgHeight );
+        //- Level
+        rect(0, WinHeight - imgHeight,imgWidth,imgHeight );
+        fill(0,0,0);
+        textSize(20);
+        text("Level: " + Level[currentLVL -1][0], 15, WinHeight - (imgHeight/2) + (imgHeight/5)  );
 
         //- Logo
         image(imgLogo, ((WinWidth/2)-imgWidth/2), 3, imgWidth,imgHeight);
@@ -245,6 +262,33 @@ public class Main extends PApplet{
             text("0", (WinWidth-(lifePos / 2)-10), 38);
         }
 
+        if(figurePool.get(selFigShow).whatAmI() == "Circle")
+        {
+            figurePool.get(selFigShow).paint((WinWidth - (imgWidth/2)), (WinHeight-(imgHeight/2)));
+        }
+        if(figurePool.get(selFigShow).whatAmI() == "Square")
+        {
+            figurePool.get(selFigShow).paint((WinWidth - (imgWidth) + 5), (WinHeight-(imgHeight) + 5));
+        }
+        if(figurePool.get(selFigShow).whatAmI() == "Triangle")
+        {
+//            if(contVal = true)
+//            {
+//                figurePool.get(selFigShow).setSx((WinWidth - (imgWidth) + 5) - figurePool.get(selFigShow).getSx());
+//                figurePool.get(selFigShow).setEx((WinWidth - (imgWidth) + 5) - figurePool.get(selFigShow).getEx());
+//                figurePool.get(selFigShow).setEx2((WinWidth - (imgWidth) + 5) - figurePool.get(selFigShow).getEx2());
+//
+//                figurePool.get(selFigShow).setSy((WinHeight-(imgHeight) + 5) - figurePool.get(selFigShow).getSy());
+//                figurePool.get(selFigShow).setEy((WinHeight-(imgHeight) + 5) - figurePool.get(selFigShow).getEy());
+//                figurePool.get(selFigShow).setEy2((WinHeight-(imgHeight) + 5) - figurePool.get(selFigShow).getEy2());
+//
+//                contVal = true;
+//            }
+
+
+      //      figurePool.get(selFigShow).paint((WinWidth - (WinWidth - (int)figurePool.get(selFigShow).getSx()/2)), (WinHeight - (WinHeight- (int)figurePool.get(selFigShow).getSy() )/2),(WinWidth - (imgWidth)), (WinHeight-(imgHeight)),(WinWidth - (imgWidth) + 5), (WinHeight-(imgHeight) + 5));
+            figurePool.get(selFigShow).paint((WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getSx())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getSy() )/2)), (WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getEx())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getEy() )/2)),(WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getEx2())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getEy2() )/2)));
+        }
 
     }
 
