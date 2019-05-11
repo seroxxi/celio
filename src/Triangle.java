@@ -62,6 +62,14 @@ public class Triangle extends Figure {
         return "Triangle";
     }
 
+    public int calcPos(int setVal, int size, int window)
+    {
+
+        setVal = (setVal % size) + (window - size);
+
+        return setVal;
+    }
+
 
 }
 

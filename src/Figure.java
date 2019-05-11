@@ -28,6 +28,8 @@ public abstract class Figure extends PApplet {
     public abstract void randomSize();
 
     public abstract String whatAmI();
+    public int calcPos(int setVal, int size, int window)
+    {return 0;};
 
     public void setColor(int c1, int c2, int c3)
     {

@@ -36,7 +36,7 @@ public class Main extends PApplet{
     //- Time
     long startTime = new Date().getTime();
     long currentTime = new Date().getTime();
-    long lvlMaxTime = 400;
+    long lvlMaxTime = 4;
     long spendTime = 1;
     long countTime = 1;
 
@@ -65,7 +65,12 @@ public class Main extends PApplet{
 
     //- Auswahl der Figur für den vergleich
     int selFigShow = 0;
-    boolean contVal = false;
+    boolean contVal1 = false;
+    boolean contVal2 = false;
+    boolean contVal3 = false;
+    boolean contVal4 = false;
+    boolean contVal5 = false;
+    boolean contVal6 = false;
 
     public static void main(String[] args) {
         PApplet.main("Main");
@@ -209,8 +214,8 @@ public class Main extends PApplet{
             }
             else
             {
-                //lifeCount = lifeCount - 1;
-                Level[currentLVL -1][1] = lifeCount - 1;
+                lifeCount = lifeCount - 1;
+                Level[currentLVL -1][1] = lifeCount;
                 //scoreCount = scoreCount / 2;
                 Level[currentLVL -1][3] = scoreCount/2;
                 resetTime();
@@ -272,22 +277,36 @@ public class Main extends PApplet{
         }
         if(figurePool.get(selFigShow).whatAmI() == "Triangle")
         {
-//            if(contVal = true)
-//            {
-//                figurePool.get(selFigShow).setSx((WinWidth - (imgWidth) + 5) - figurePool.get(selFigShow).getSx());
-//                figurePool.get(selFigShow).setEx((WinWidth - (imgWidth) + 5) - figurePool.get(selFigShow).getEx());
-//                figurePool.get(selFigShow).setEx2((WinWidth - (imgWidth) + 5) - figurePool.get(selFigShow).getEx2());
-//
-//                figurePool.get(selFigShow).setSy((WinHeight-(imgHeight) + 5) - figurePool.get(selFigShow).getSy());
-//                figurePool.get(selFigShow).setEy((WinHeight-(imgHeight) + 5) - figurePool.get(selFigShow).getEy());
-//                figurePool.get(selFigShow).setEy2((WinHeight-(imgHeight) + 5) - figurePool.get(selFigShow).getEy2());
-//
-//                contVal = true;
-//            }
-
 
       //      figurePool.get(selFigShow).paint((WinWidth - (WinWidth - (int)figurePool.get(selFigShow).getSx()/2)), (WinHeight - (WinHeight- (int)figurePool.get(selFigShow).getSy() )/2),(WinWidth - (imgWidth)), (WinHeight-(imgHeight)),(WinWidth - (imgWidth) + 5), (WinHeight-(imgHeight) + 5));
-            figurePool.get(selFigShow).paint((WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getSx())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getSy() )/2)), (WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getEx())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getEy() )/2)),(WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getEx2())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getEy2() )/2)));
+            //figurePool.get(selFigShow).paint((WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getSx())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getSy() )/2)), (WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getEx())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getEy() )/2)),(WinWidth - ((WinWidth - (int)figurePool.get(selFigShow).getEx2())/2)), (WinHeight - ((WinHeight- (int)figurePool.get(selFigShow).getEy2() )/2)));
+
+            contVal1 = false;
+            contVal2 = false;
+            contVal3 = false;
+            contVal4 = false;
+            contVal5 = false;
+            contVal6 = false;
+
+
+            int setx1, sety1, setx2, sety2, setx3, sety3 = 0;
+            setx1 = (int)figurePool.get(selFigShow).getSx();
+            sety1 = (int)figurePool.get(selFigShow).getSy();
+            setx2 = (int)figurePool.get(selFigShow).getEx();
+            sety2 = (int)figurePool.get(selFigShow).getEy();
+            setx3 = (int)figurePool.get(selFigShow).getEx2();
+            sety3 = (int)figurePool.get(selFigShow).getEy2();
+
+
+            setx1 =  figurePool.get(selFigShow).calcPos(setx1, imgWidth, WinWidth);
+            setx2 =  figurePool.get(selFigShow).calcPos(setx2, imgWidth, WinWidth);
+            setx3 =  figurePool.get(selFigShow).calcPos(setx3, imgWidth, WinWidth);
+
+            sety1 =  figurePool.get(selFigShow).calcPos(sety1, imgHeight, WinHeight);
+            sety2 =  figurePool.get(selFigShow).calcPos(sety2, imgHeight, WinHeight);
+            sety3 =  figurePool.get(selFigShow).calcPos(sety3, imgHeight, WinHeight);
+
+            figurePool.get(selFigShow).paint(setx1, sety1, setx2, sety2, setx3, sety3);
         }
 
     }
