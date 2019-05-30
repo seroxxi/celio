@@ -69,9 +69,23 @@ public class Main extends PApplet{
         initFigure(countFigur, figureTypeCount);
         timeLeft = lvlMaxTime + 1; // we remove 1 ate first before first draw
     }
+    public void badclick(){
+        println(":-(");
+        EndMessage = ":-(";
+        textSize(32);
+        textAlign(CENTER);
+        text(EndMessage, WinWidth/2, (WinHeight/2)-30);
+        fill(0, 102, 153);
+        text(EndMessage, WinWidth/2, (WinHeight/2));
+        fill(0, 102, 153, 51);
+        text(EndMessage, WinWidth/2, (WinHeight/2)+30);
+        textAlign(LEFT);
+
+    }
 
     public void draw(){
         calcSpendTime();
+
 
         //- reset Window
         resetWindow();
@@ -101,6 +115,7 @@ public class Main extends PApplet{
         drawScore();
         //- berechne Time
         drawTime();
+
     }
 
     public void initFigure(int figureCount, int readyFigure)
@@ -215,6 +230,7 @@ public class Main extends PApplet{
             redraw();
         } else {
             --lifeCount;
+            badclick();
             println(":-(");
         }
     }
