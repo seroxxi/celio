@@ -19,6 +19,10 @@ public class Circle extends Figure {
 
     @Override
     public boolean contains(float x, float y, int mouseX, int mouseY) {
-        return false;
+        float cornerX = x - radius*2;
+        float cornerY = y - radius*2;
+
+        return mouseX >= cornerX && mouseX <= cornerX + width &&
+                mouseY >= cornerY && mouseY <= cornerY + height;
     }
 }

@@ -26,7 +26,7 @@ public class Main extends PApplet{
     long timeLeft;
 
     int countFigur = 10;
-    int figureTypeCount = 1;
+    int figureTypeCount = 2;
 
     //- End Message
     String EndMessage = "";
@@ -214,6 +214,7 @@ public class Main extends PApplet{
             timeLeft = lvlMaxTime + 1;
             redraw();
         } else {
+            --lifeCount;
             println(":-(");
         }
     }

@@ -30,6 +30,7 @@ public class Triangle extends Figure {
 
     @Override
     public boolean contains(float x, float y, int mouseX, int mouseY) {
+
         return false;
     }
 
