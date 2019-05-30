@@ -26,7 +26,7 @@ public class Main extends PApplet{
     long timeLeft;
 
     int countFigur = 10;
-    int figureTypeCount = 2;
+    int figureTypeCount = 3;
 
     //- End Message
     String EndMessage = "";

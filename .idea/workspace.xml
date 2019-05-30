@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a80d3d5e-6a2c-4313-bf1e-a3aea58387c3" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+    <list default="true" id="a80d3d5e-6a2c-4313-bf1e-a3aea58387c3" name="Default Changelist" comment="Circle complete and lifecount -- when clickpoint not correct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/data/CELIO_BLANK.png" afterPath="$PROJECT_DIR$/data/CELIO_BLANK.png" />
-      <change beforePath="$PROJECT_DIR$/out/production/celio/Circle.class" afterPath="$PROJECT_DIR$/out/production/celio/Circle.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/celio/Figure.class" afterPath="$PROJECT_DIR$/out/production/celio/Figure.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/celio/Main.class" afterPath="$PROJECT_DIR$/out/production/celio/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/celio/Square.class" afterPath="$PROJECT_DIR$/out/production/celio/Square.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/celio/Triangle.class" afterPath="$PROJECT_DIR$/out/production/celio/Triangle.class" />
-      <change beforePath="$PROJECT_DIR$/src/Circle.java" afterPath="$PROJECT_DIR$/src/Circle.java" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/Triangle.java" afterPath="$PROJECT_DIR$/src/Triangle.java" />
     </list>
@@ -33,8 +26,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="216" column="24" lean-forward="false" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="24" />
+            <state relative-caret-position="400">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#692#710#0" expanded="true" />
@@ -65,8 +58,8 @@
       <file leaf-file-name="Circle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Circle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="64" />
+            <state relative-caret-position="550">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="e#348#349#0" expanded="true" />
                 <element signature="e#400#401#0" expanded="true" />
@@ -78,22 +71,9 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="768">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Square.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -104,6 +84,19 @@
             <state relative-caret-position="675">
               <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Square.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding>
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/Figure.java" />
         <option value="$PROJECT_DIR$/src/Square.java" />
         <option value="$PROJECT_DIR$/src/Circle.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -293,7 +286,7 @@
       <workItem from="1558700329316" duration="1019000" />
       <workItem from="1558902887607" duration="1061000" />
       <workItem from="1558955122204" duration="15643000" />
-      <workItem from="1559158679246" duration="4411000" />
+      <workItem from="1559158679246" duration="5624000" />
     </task>
     <task id="LOCAL-00001" summary="INIT">
       <created>1556609715105</created>
@@ -400,11 +393,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559077896200</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Circle complete and lifecount -- when clickpoint not correct">
+      <created>1559248392971</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559248392971</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110217000" />
+    <option name="totallyTimeSpent" value="111430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2582" height="1402" extended-state="6" />
@@ -488,7 +488,8 @@
     <MESSAGE value="- fix Triangle" />
     <MESSAGE value="- Square selected&#10;- Circle selected&#10;- Triangle selected broken" />
     <MESSAGE value="Refactor and start adding click support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor and start adding click support" />
+    <MESSAGE value="Circle complete and lifecount -- when clickpoint not correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circle complete and lifecount -- when clickpoint not correct" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,6 +746,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Figure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PositionedFigure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -760,10 +769,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Square.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="625">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
             <element signature="e#140#141#0" expanded="true" />
             <element signature="e#178#179#0" expanded="true" />
@@ -771,18 +791,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Figure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="79" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="216" column="24" lean-forward="false" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="24" />
+        <state relative-caret-position="400">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#692#710#0" expanded="true" />
@@ -792,21 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="64" />
-          <folding>
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="768">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -31,8 +31,14 @@ public class Triangle extends Figure {
     @Override
     public boolean contains(float x, float y, int mouseX, int mouseY) {
 
-        return false;
-    }
+        float cornerA = x - offsetX3;
+        float cornerB = y - offsetY3;
 
+
+        return mouseX >= cornerA && mouseX <= cornerA + width &&
+                mouseY >= cornerB && mouseY <= cornerB + height;
+    }
 }
+
+
 
