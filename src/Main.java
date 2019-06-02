@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Main extends PApplet{
     //- Main Board
-    int WinWidth = 800;
-    int WinHeight = 600;
+    int WinWidth = 1900;
+    int WinHeight = 1200;
 
     //- Logo
     int imgWidth = 150;
@@ -232,6 +232,9 @@ public class Main extends PApplet{
             --lifeCount;
             badclick();
             println(":-(");
+            if(lifeCount==0){
+                return;
+            }
         }
     }
 }
